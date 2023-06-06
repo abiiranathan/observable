@@ -25,7 +25,7 @@ target_include_directories(observable
 )
 
 target_link_libraries(observable PUBLIC Qt6::Core)
-target_compile_definitions(observable INTERFACE OBSERVABLE_LIBRARY)
+target_compile_definitions(observable PRIVATE OBSERVABLE_LIBRARY)
 
 # Generate the export file
 install(TARGETS observable
