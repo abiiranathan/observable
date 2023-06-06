@@ -1,0 +1,12 @@
+#ifndef OBSERVABLE_GLOBAL_H
+#define OBSERVABLE_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(OBSERVABLE_LIBRARY)
+#  define OBSERVABLE_EXPORT Q_DECL_EXPORT
+#else
+#  define OBSERVABLE_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // OBSERVABLE_GLOBAL_H
